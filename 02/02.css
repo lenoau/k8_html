@@ -10,3 +10,8 @@ footer {
     background-color: black;
     color: white;
 }
+
+/* menu 안의 li테그 선택 */
+#menu > li{
+    background-color: blue;
+}
