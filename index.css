@@ -1,0 +1,9 @@
+ul{
+    list-style: none;
+    border-radius: 15px;
+    border-color: gray;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
