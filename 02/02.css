@@ -1,17 +1,124 @@
-header {
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header, main, footer{
+    width: 80%;
+    margin-left: 10%;
+}
+
+header, main {
     background-color: aliceblue;
 }
 
-main {
-    background-color: aliceblue;
+header, header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer {
-    background-color: black;
+header{
+    height: 80px;
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* ul테그 점 없애는 스타일 */
+ul{list-style: none;}
+
+nav li{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+/* 커서 접근시 색 바꿈 */
+nav li:hover{
+    background-color: aqua;
+}
+
+/* 링크 __삭제 */
+a{
+    text-decoration: none;
     color: white;
 }
 
-/* menu 안의 li테그 선택 */
-#menu > li{
-    background-color: blue;
+article{
+    padding: 80px;
 }
+
+article h1{
+    display: flex;
+    justify-content: center;
+}
+
+article p{
+    padding: 15px;
+}
+
+article span{
+    color: brown;
+    font-weight: bold;
+}
+
+section{
+    padding:20px 40px;
+    background-color: white;
+}
+
+section p{
+    padding-left: 20px;
+}
+
+.secdiv{
+    display: flex;
+}
+
+img{
+    border-radius: 15px;
+}
+
+#h2HTML, #h2React{
+    display: flex;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+#h2CSS{
+    display: flex;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+#h2JS{
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+/* 화면크기에 따라 보여지는 화면 비율 조정 */
+@media screen and (max-width : 1024px) {
+    header, main, footer{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+/* header ul은 header 아래 전체 단락을 다 찾는다 */
+/* header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+/* menu 안의 li테그만 선택 */
+/* #menu > li{
+    background-color: blue;
+} */
