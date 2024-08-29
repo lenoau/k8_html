@@ -1,7 +1,7 @@
 ul{
     list-style: none;
-    border-radius: 15px;
-    border-color: gray;
+    border: 2px solid gray;
+    border-radius: 5px;
 }
 a{
     text-decoration: none;
