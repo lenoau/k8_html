@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header, main {
+    width: 80%;
+    margin-left: 10%;
+
+    display: flex;
+}
+
+header {
+    height: 80px;
+    background-color: aliceblue;
+    color: blue;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 500px;
+    border: 2px solid gray;
+}
+button {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: aliceblue;
+}
+button:hover {
+    background-color: rgb(199, 174, 32);
+}
