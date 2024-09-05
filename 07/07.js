@@ -1,29 +1,47 @@
-//dom 생성된 후 이벤트 감지
-document.addEventListener('DOMContentLoaded', ()=>{
-    //버튼가져오기
-    const bts = document.querySelectorAll('.bt1 > button');
+//select값 변경
 
-    //이미지가져오기
-    const imgs = document.querySelectorAll('.bt2 > img');
+const selectChange = (s1, s2, lb1, lb2) =>
+{
+    if(s1.value === 'ºC') s2.value = 'ºF';
+    else s2.value = 'ºC';
 
-    //결과 가져오기
-    const result = document.querySelector('.result');
+    lb1.innerHTML = s1.value;
+    lb2.innerHTML = s2.value;
+}
 
-    //버튼 클릭
+document.addEventListener('DOMContentLoaded', () => 
+{
+    //요소가져오기
+    const sel1 = document.querySelector('#sel1');
+    const sel2 = document.querySelector('#sel2');
 
-    for(let bt of bts) {
-        bt.addEventListener('click', ()=>{
-            //컴퓨터 랜덤 수
-            let comN = Math.floor(Math.random()*6)+1;
-            imgs[0].setAttribute('src', `../img/${comN}.png`);
+    const txt1 = document.querySelector('#txt1');
+    const txt2 = document.querySelector('#txt2');
 
-            //사용자 선택 수
-            let UserN = parseInt(bt.textContent.charAt(0));
-            imgs[1].setAttribute('src', `../img/${UserN}.png`);
+    const lb1 = document.querySelector('label[for = txt1]');
+    const lb2 = document.querySelector('label[for = txt2]');
 
-            //비교 결과 출력
-            if(comN == UserN) result.innerHTML = '맞음';
-            else result.innerHTML = '틀림';
-        });
-    }
+    //select box
+    sel1.addEventListener('change', () => 
+    {
+        selectChange(sel1, sel2, lb1, lb2);   
+    });
+    sel2.addEventListener('change', () => 
+    {
+        selectChange(sel2, sel1, lb1, lb2);
+    });
+    
+    txt1.addEventListener('input', () =>
+    {
+        if(sel1.value === 'ºC')
+        {
+            //섭씨온도 => 화씨온도
+            txt2.value = (parseFloat(txt1.value) * (9/5) +32).toFixed(3);
+        }
+        else 
+        {
+            //화씨온도 => 섭씨온도
+            txt2.value = ((parseFloat(txt1.value) -32) * (5/9)).toFixed(3);
+        }
+    });
 });

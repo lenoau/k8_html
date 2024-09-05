@@ -1,0 +1,47 @@
+main 
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.hh1, .whatImg
+{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    display: flex;
+    margin-left: 10%;
+}
+
+.hh1 
+{
+   border: 2px solid gray;
+   border-radius: 5px;
+   height: 100px;
+   background-color: aliceblue;
+}
+
+.whatImg
+{
+    flex-direction: column;
+}
+
+#txt1
+{
+    margin-right: 8px;
+}
+
+.number1
+{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 30px;
+}
+
+button
+{
+    background-color: burlywood;
+}
+
