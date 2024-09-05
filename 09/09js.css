@@ -1,0 +1,41 @@
+.hh1 
+{
+    justify-content: center;
+    display: flex;
+}
+
+.sec
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+
+    width: 100%;
+}
+
+.sec > input
+{
+    width: 35%;
+    height: 30px;
+    margin: 10px;
+}
+
+#txt2
+{
+    background-color: brown;
+    text-align: center;
+}
+
+button
+{
+    margin-right: 10px;
+}
+
+form 
+{
+    width: 80%;
+    margin-left: 10%;
+}
+
+
