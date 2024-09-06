@@ -1,0 +1,72 @@
+.main
+{
+    width : 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.div1
+{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
+section
+{
+    display: flex;
+    justify-content: center;
+}
+span
+{
+    flex-direction: row;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    font-size: larger;
+}
+
+.sp0
+{
+    background-color: brown;
+}
+.sp1
+{
+    background-color: brown;
+}
+.sp2
+{
+    background-color: rgb(109, 121, 156);
+}
+.sp3
+{
+    background-color: rgb(109, 121, 156);
+}
+.sp4
+{
+    background-color: rgb(169, 206, 34);
+}
+.sp5
+{
+    background-color: rgb(169, 206, 34);
+}
+.sp6
+{
+    background-color: rgb(47, 194, 204);
+}
+.divplus
+{
+    margin-top: 10px;
+}
+button
+{
+    background-color: burlywood;
+    margin-top: 20px;
+}
+

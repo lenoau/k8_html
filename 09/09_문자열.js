@@ -35,4 +35,3 @@ console.log('문자열자르기 :', s.slice(5, 0));
 // s = "1234";
 // console.log('문자 : ', s);
 // console.log('숫자확인 :', isNaN(s));
-
