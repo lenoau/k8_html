@@ -1,4 +1,4 @@
-#boxofficeMain
+#boxofficeMain , #mvfoot
 {
     display: flex;
     justify-content: center;
@@ -6,7 +6,26 @@
     flex-direction: column;
     
 }
- 
+
+#mvinfo
+{
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 80%;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+#mvinfo > ul
+{
+    list-style: none
+}
+
+#dt , button
+{
+    margin-right: 10px;
+}
+
 .sec, .divDt 
 {
     display: flex;
@@ -30,10 +49,16 @@
 
     margin: 10px 2px;
 }
+
 .movieNm
 {
     margin-right: 10px;
     font-weight: bold;
+}
+
+.movieopen
+{
+    margin-right: 30px;
 }
 
 .mvli:hover
@@ -54,6 +79,13 @@
    margin-right: 10px;
 }
 
+.movierank
+{
+    width: 10%;
+    display: inline-flex;
+    justify-content: center;
+}
+
 .sec
 {
     width: 100%;
@@ -70,8 +102,41 @@
     border: solid grey;
 }
 
-input[type=date]
+input[type=date], select
 {
     width: 40%;
     height: 30px;
+    margin-right: 10px;
+}
+
+fieldset
+{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movieNm 
+{
+    width: 60%;
+}
+  
+  .openDt 
+{
+    width: 20%;
+}
+
+.up
+{
+    color: chartreuse;
+}
+.down
+{
+    color: red;
+}
+
+a 
+{
+    text-decoration: none;
 }

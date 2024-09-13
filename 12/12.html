@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS기초</title>
-    <link rel="stylesheet" type="text/css" href="./12js.css">
+    <link rel="stylesheet" type="text/css" href="./12.css">
     <script src = './12.js'></script>
 </head>
 <body>
@@ -19,6 +19,18 @@
             <section class="sec">
             <div class="divDt">
                 <input type="date" id = "dt" name= "dt">
+                <!-- fieldset 라디오 체크박스 하나로 묶어줌 
+                     name이 같아야 라디오 체크박스 하나씩 체크됌
+                     rabel String을 클릭해도 작동되게 함-->
+                <fieldset>
+                    <input type="radio" id="r1" name="rb" value="K">
+                    <label for = "r1">한국영화</label> 
+                    <input type="radio" id="r2" name="rb" value="F">
+                    <label for = "r2">외국영화</label>
+                    <!-- checked = 디폴트값으로 화면에 띄워줌 -->
+                    <input type="radio" id="r3" name="rb" value="D" checked> 
+                    <label for = "r3">전체</label>
+                </fieldset>
             </div>
             </section>
             <section class="sec">
@@ -27,6 +39,11 @@
                 </ul>
             </section>
         </main>
+        <footer id="mvfoot">
+            <div id="mvinfo">
+                
+            </div>
+        </footer>
     </form>
 </body>
 </html>

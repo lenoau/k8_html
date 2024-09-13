@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     //버튼 클릭
 
-    for(let bt of bts) {
+    for(let bt of bts) 
+    {
         bt.addEventListener('click', ()=>{
             //컴퓨터 랜덤 수
             let comN = Math.floor(Math.random()*6)+1;
